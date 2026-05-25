@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # script to control a Novabot mower connected to Opennova server.
+# based on Opennova documentation https://wiki.ramonvanbruggen.nl/api/dashboard-api/#command-endpoint
+#
 # Usage: <start|stop|pause|resume|home|set> {[area] [cutterhigh], [[path angle] [Obstacle detection]}
 # start mode needs input 
 #       area map1, map10, map100, map11 (=map 1 and 10), map101 (map 1 and 100), map 111 (all 3 maps)
@@ -11,9 +13,11 @@
 #       obstacle detection, 1, 2 or 3 (Low, medium, High)
 #
 #
-# chenge next section to your situation
+# change next section SERVER and SERIAL to your situation
+
 SERVER="192.168.x.x"
 SERIAL="LFINxxxxxxxxx"
+
 #  End change needed
 
 URL="http://${SERVER}/api/dashboard/command/${SERIAL}"
