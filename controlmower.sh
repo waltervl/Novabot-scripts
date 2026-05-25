@@ -6,7 +6,7 @@
 # Usage: <start|stop|pause|resume|home|set> {[area] [cutterhigh], [[path angle] [Obstacle detection]}
 # start mode needs input 
 #       area map1, map10, map100, map11 (=map 1 and 10), map101 (map 1 and 100), map 111 (all 3 maps)
-#          note: map0 is map1 , map1 is map10 map2 is map 100
+#          note: map0 is map1, map1 is map10, map2 is map 100
 #       cutterheight range 0..7. Formula: user_cm − 2. So 5 cm → 3, 6 cm → 4
 # set needs input 
 #       path angle, range 0-180
