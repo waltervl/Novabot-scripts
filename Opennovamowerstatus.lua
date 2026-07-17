@@ -12,8 +12,9 @@ return {
 
     execute = function(domoticz, item)
         local deviceSn = 'LFIN.....'          -- change this
-        local textDeviceName = 'Novabot status'     -- change this
-        local alertDeviceName = 'Novabot Alert'     -- change this
+        local textDeviceName = 'Novabot status'     -- Create a dummy text device, fill in its name here eg 'Novabot status'
+        local alertDeviceName = 'Novabot Alert'     -- Create a dummy alert device, fill in its name here eg 'Novabot Alert'
+		                                            -- In Domoticz UI set a notification on the Alert device so you receive alert notification
         local apiUrl = 'http://<Opennovaserver>/api/dashboard/devices/' .. deviceSn -- change this
 
         local function toNumber(v)
